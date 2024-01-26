@@ -83,7 +83,12 @@ const Base = ({ addBase, pizza }) => {
         <div className="next">
           <Link to={{ pathname: "/toppings" }}>
             {" "}
-            <motion.button variants={nextVariants} whileHover="hover">
+            <motion.button
+              variants={nextVariants}
+              initial="hidden"
+              animate="visible"
+              whileHover="hover"
+            >
               Next
             </motion.button>
           </Link>
